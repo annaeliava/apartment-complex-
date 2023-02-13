@@ -115,36 +115,6 @@ body {
         }
     }
 
-    &__title {
-        font-family: $secondFont;
-        font-size: 60px;
-        font-weight: 400;
-        margin-top: 65px;
-
-        &-bold {
-            font-weight: 600;
-        }
-    }
-
-    &__subtitle {
-        margin-top: 28px;
-        font-size: 32px;
-        font-weight: 400;
-    }
-
-    &__second-subtitle {
-        font-size: 35px;
-        font-weight: 700;
-    }
-
-    &__subtitle, &__second-subtitle {
-        font-family: $mainFont;
-    }
-
-    &__title, &__subtitle, &__second-subtitle {
-        color: $darkBlue;
-    } 
-
     &__line {
     width: 100%;
     height: 0;
@@ -152,22 +122,29 @@ body {
     }
 
     &__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    &__btn {
-        margin-top: 35px;
-        margin-bottom: 41px;
-        @include btn(325px, 56px);
+        margin-left: 10%; 
     }
 
     &__info{
         display: flex;
         flex-direction: row;
-        align-content: space-between;
-        width: fit-content;
+        justify-content: center;
+        align-content: space-evenly;
+        margin-bottom: 169px;
+
+        &-container {
+            margin: 15px;
+            width: 190px;
+            height: 100px;
+            background-image: url(../img/main__container.png);
+            background-position: center;
+        }
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
 
         &-title, &-subtitle {
             font-family: $mainFont;
@@ -184,18 +161,84 @@ body {
         }
 
         &-item {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: stretch;
+            margin-right: 36px;
             width: 221px;
             height: 132px;
             box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
             border-radius: 10px;
             background-color: $containers;
-            background-image: url(../img/main__container.svg) no repeat;
-            background-position-x: center;
         }
+    }
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__btn {
+        margin-top: 35px;
+        margin-bottom: 41px;
+        @include btn(325px, 56px);
+    }
+
+    &__title {
+        font-family: $secondFont;
+        font-size: 60px;
+        font-weight: 400;
+        margin-top: 65px;
+    
+        &-bold {
+            font-weight: 600;
+        }
+    }
+    
+    &__subtitle {
+        margin-top: 28px;
+        font-size: 32px;
+        font-weight: 400;
+    }
+    
+    &__second-subtitle {
+        font-size: 35px;
+        font-weight: 700;
+    }
+    
+    &__subtitle, &__second-subtitle {
+        font-family: $mainFont;
+    }
+    
+    &__title, &__subtitle, &__second-subtitle {
+        color: $darkBlue;
+    } 
+}
+
+.addition {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    &__container {
+        width: 262px;
+        height: 139px;
+        box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
+        border-radius: 10px;
+        background-color: $containers;
+
+    }
+    
+    &__title, &__subtitle {
+        font-family: $mainFont;
+        font-size: 22px;
+    }
+
+    &__title {
+        font-weight: 400;
+    }
+
+    &__subtitle {
+        font-weight: 600;
     }
 }
 
