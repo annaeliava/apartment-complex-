@@ -48,20 +48,23 @@ body {
 
     &__logo {
         height: auto;
+        margin-top: 10px;
         margin-bottom: 12px;
     }
 
     &__menu {
         &-list {
-            margin: 1em 0 .5em;
-            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
             font-family: $secondFont;
             font-size: 18px;
             font-weight: 600;
         }
 
         &-item {
-            display: inline;
+            margin-right: 32px;
+            list-style: none;
         }
 
         &-link {

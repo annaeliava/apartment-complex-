@@ -32,17 +32,20 @@ body {
 }
 .header__logo {
   height: auto;
+  margin-top: 10px;
   margin-bottom: 12px;
 }
 .header__menu-list {
-  margin: 1em 0 0.5em;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 600;
 }
 .header__menu-item {
-  display: inline;
+  margin-right: 32px;
+  list-style: none;
 }
 .header__menu-link {
   text-decoration: none;
