@@ -463,23 +463,21 @@ body {
     }
 
     &__vl {
+        margin-left: 25px;
         border-left: 1px dashed $lightBlue;
         height: 252px;
     }
 
     &__first-section {
         display: flex;
-        justify-content: flex-start;
-        margin-top: 113px;
-        margin-left: 5vw;
+        align-items: center;
         width: 50vw;
+        margin-top: 10%;
+        margin-left: 10%;
     }
 
     &__option {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
-        margin-right: 60px;
+        margin-left: 25px;
         font-family: $mainFont;
         font-weight: 700;
         font-size: 16px;
@@ -541,6 +539,7 @@ body {
         justify-content: center;
         text-align: center;
         width: 50vw;
+        margin-top: 10%;
     }
 }
 

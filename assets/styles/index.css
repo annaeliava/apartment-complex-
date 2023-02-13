@@ -381,21 +381,19 @@ body {
   font-size: 24px;
 }
 .footer__vl {
+  margin-left: 25px;
   border-left: 1px dashed #31BEF4;
   height: 252px;
 }
 .footer__first-section {
   display: flex;
-  justify-content: flex-start;
-  margin-top: 113px;
-  margin-left: 5vw;
+  align-items: center;
   width: 50vw;
+  margin-top: 10%;
+  margin-left: 10%;
 }
 .footer__option {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  margin-right: 60px;
+  margin-left: 25px;
   font-family: "Gilroy";
   font-weight: 700;
   font-size: 16px;
@@ -459,4 +457,5 @@ body {
   justify-content: center;
   text-align: center;
   width: 50vw;
+  margin-top: 10%;
 }/*# sourceMappingURL=index.css.map */
