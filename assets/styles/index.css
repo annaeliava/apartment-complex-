@@ -225,6 +225,9 @@ body {
   font-weight: 600;
 }
 
+.map {
+  margin-bottom: 79px;
+}
 .map__title {
   display: flex;
   justify-content: center;
@@ -232,8 +235,96 @@ body {
   font-family: "Gilroy";
   font-weight: 700;
   font-size: 45px;
+  color: #212D55;
 }
 .map__section {
   display: flex;
   justify-content: center;
+}
+
+.description__titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 61px;
+}
+.description__title {
+  margin-bottom: 30px;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-size: 45px;
+  color: #212D55;
+}
+.description__subtitle {
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-size: 22px;
+}
+.description__card {
+  margin-right: 36px;
+  width: 193px;
+  height: 102px;
+  background: #F9FCFD;
+  box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
+  border-radius: 10px;
+}
+.description__cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-evenly;
+  margin-bottom: 60px;
+}
+.description__card-container {
+  margin: 15px;
+  width: 163px;
+  height: 72px;
+  background-image: url(../img/description__container.png);
+  box-shadow: 0px 5px 19px rgba(33, 45, 85, 0.06);
+  background-position: center;
+}
+.description__card-text {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 22px;
+  color: #212D55;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+}
+.gallery__main-container {
+  margin-right: 30px;
+  width: 848px;
+  height: 573px;
+  background-image: url(../img/description-imgs/firstImg.svg);
+}
+.gallery__main-info {
+  margin-top: 120px;
+  margin-left: 27px;
+  padding: 20px;
+  width: 538px;
+  height: 378.25px;
+  font-family: "Gilroy";
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0px 5px 19px rgba(33, 45, 85, 0.06);
+  border-radius: 10px;
+}
+.gallery__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 22px;
+  color: #212D55;
+}
+.gallery__text-1, .gallery__text-2 {
+  font-weight: 400;
+  font-size: 16px;
+  color: #656D89;
+}
+.gallery__side-img {
+  margin-bottom: 25px;
 }/*# sourceMappingURL=index.css.map */
