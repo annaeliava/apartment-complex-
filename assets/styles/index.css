@@ -170,9 +170,31 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.addition__imgs, .addition__img {
+  width: 80px;
+  height: 69px;
+}
+.addition__imgs {
+  position: relative;
+}
+.addition__main-img {
+  position: absolute;
+  top: 43px;
+  left: 43px;
+  z-index: 2;
+}
+.addition__background {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  z-index: 1;
 }
 .addition__container {
+  margin-right: 31px;
+  margin-bottom: 30px;
   width: 262px;
   height: 139px;
   box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
@@ -188,4 +210,13 @@ body {
 }
 .addition__subtitle {
   font-weight: 600;
+}
+
+.map__title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-size: 45px;
 }/*# sourceMappingURL=index.css.map */

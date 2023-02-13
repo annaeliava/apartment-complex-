@@ -217,15 +217,40 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    &__imgs, &__img {
+        width: 80px;
+        height: 69px;
+    }
+
+    &__imgs {
+        position: relative;
+    }
+
+    &__main-img {
+        position: absolute;
+        top: 43px;
+        left: 43px;
+        z-index: 2;
+    }
+
+    &__background {
+        position: absolute;
+        top: 15px;
+        left: 10px;
+        z-index: 1;
+    }
 
     &__container {
+        margin-right: 31px;
+        margin-bottom: 30px;
         width: 262px;
         height: 139px;
         box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
         border-radius: 10px;
         background-color: $containers;
-
     }
     
     &__title, &__subtitle {
@@ -242,5 +267,15 @@ body {
     }
 }
 
+.map {
+    &__title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+        font-family: $mainFont;
+        font-weight: 700;
+        font-size: 45px;
+    }
+}
 
 
