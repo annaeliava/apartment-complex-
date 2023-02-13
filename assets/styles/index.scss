@@ -306,6 +306,8 @@ body {
 }
 
 .description {
+    margin-bottom: 61px;
+
     &__titles {
         display: flex;
         flex-direction: column;
@@ -405,4 +407,140 @@ body {
     }
 }
 
+.footer {
+    height: 552px;
+    background-color: $containers;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    &__title {
+        margin-left: 18%;
+        text-align: center;
+        margin-top: 50px;
+        width: 65vw;
+        font-family: $mainFont;
+        font-weight: 700;
+        font-size: 40px;
+        color: $darkBlue;
+    }
+
+    &__phone-call {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    &__btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        border-color: #FFFFFF;
+        background: #FFFFFF;
+        box-shadow: 0px 3px 15px rgba(33, 45, 85, 0.1);
+        cursor: pointer;
+    }
+
+    &__phone, &__phone-number {
+        font-family: $mainFont;
+        font-weight: 700;
+        color: $darkBlue;
+    }
+
+    &__phone {
+        width: 346px;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    &__phone-number {
+        margin-left: 11px;
+        font-size: 24px;
+    }
+
+    &__vl {
+        border-left: 1px dashed $lightBlue;
+        height: 252px;
+    }
+
+    &__first-section {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 113px;
+        margin-left: 5vw;
+        width: 50vw;
+    }
+
+    &__option {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        margin-right: 60px;
+        font-family: $mainFont;
+        font-weight: 700;
+        font-size: 16px;
+        color: $darkBlue;
+    }
+
+    &__notification {
+        margin-bottom: 25px;
+        font-family: $mainFont;
+        font-weight: 500;
+        font-size: 16px;
+        color: $lightBlue;
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: repeat(2, 249px);
+        grid-template-rows: repeat(2, 71px);
+        row-gap: 25px;
+        column-gap: 58px;
+        margin-bottom: 37px;
+    }
+
+    &__form-item {
+        padding-top: 10px;
+        padding-left: 38px;
+        width: 249px;
+        height: 71px;
+        font-family: $mainFont;
+        border: none;
+        background-image: url(../img/footer__container.svg);
+        background-color: transparent;
+    }
+
+    &__confirm {
+        margin-top: 12px;
+        margin-left: 12px;
+        @include btn(241px, 56px);
+
+        &:hover {
+            @extend %hoverBtn;
+        }
+    }
+
+    &__label {
+        font-family: $mainFont;
+        font-weight: 250;
+        font-size: 14px;
+        color: $customGray;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $lightBlue;
+    }
+
+    &__second-container {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        width: 50vw;
+    }
+}
 
