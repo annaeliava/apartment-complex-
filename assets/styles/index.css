@@ -6,6 +6,11 @@
   cursor: pointer;
 }
 
+.about__btn:hover {
+  box-shadow: 0px 4px 20px #0B91C5;
+  cursor: pointer;
+}
+
 body {
   display: grid;
   grid-template-rows: 140px auto 552px;
@@ -171,7 +176,9 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin-left: 15vw;
   margin-bottom: 100px;
+  width: 80vw;
 }
 .addition__imgs, .addition__img {
   width: 80px;
@@ -183,13 +190,13 @@ body {
 .addition__main-img {
   position: absolute;
   top: 43px;
-  left: 43px;
+  left: 38px;
   z-index: 2;
 }
 .addition__background {
   position: absolute;
   top: 15px;
-  left: 10px;
+  left: 4px;
   z-index: 1;
 }
 .addition__container {
@@ -200,6 +207,12 @@ body {
   box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
   border-radius: 10px;
   background-color: #F9FCFD;
+}
+.addition__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 113px;
 }
 .addition__title, .addition__subtitle {
   font-family: "Gilroy";
@@ -219,4 +232,8 @@ body {
   font-family: "Gilroy";
   font-weight: 700;
   font-size: 45px;
+}
+.map__section {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=index.css.map */
