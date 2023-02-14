@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>Apartment Complex</title>
 </head>
 <body>
@@ -128,7 +129,6 @@
                 <button class="about__btn">Узнать стоимость проекта</button>
             </div>
             <div class="main__info">
-                <div class="swiper"></div>
                 <div class="main__info-item">
                     <div class="main__info-container">
                         <div class="main__info-text">
@@ -163,6 +163,45 @@
                 </div>
             </div>
         </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="main__info-item swiper-slide">
+                    <div class="main__info-container">
+                        <div class="main__info-text">
+                            <div class="main__info-title">Квартиры </div>
+                            <div class="main__info-subtitle">от 63 801 ₽/м² </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__info-item swiper-slide">
+                    <div class="main__info-container">
+                        <div class="main__info-text">
+                            <div class="main__info-title">Стоимость </div>
+                            <div class="main__info-subtitle">от 4,44 млн ₽ </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__info-item swiper-slide">
+                    <div class="main__info-container">
+                        <div class="main__info-text">
+                            <div class="main__info-title">Класс </div>
+                            <div class="main__info-subtitle">Эконом </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__info-item swiper-slide">
+                    <div class="main__info-container">
+                        <div class="main__info-text">
+                            <div class="main__info-title">Срок сдачи </div>
+                            <div class="main__info-subtitle">Сдан</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="hidden__title">О комплексе</div>
         <div class="addition">
             <div class="addition__container">
                 <div class="addition__imgs">
@@ -455,6 +494,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script src="assets/js/swiper.js"></script>
 </body>

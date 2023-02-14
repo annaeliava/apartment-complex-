@@ -474,6 +474,15 @@ body {
   margin-top: 10%;
 }
 
+.swiper,
+swiper-container {
+  display: none;
+}
+
+.hidden__title {
+  display: none;
+}
+
 @media screen and (min-width: 320px) and (max-width: 414px) {
   body {
     display: grid;
@@ -482,8 +491,8 @@ body {
   }
   .header {
     width: 100vw;
-    margin-top: 20px;
-    margin-left: 10px;
+    margin-top: 10%;
+    margin-left: 5%;
   }
   .header__desktop {
     display: none;
@@ -509,7 +518,43 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 15px;
+    justify-content: flex-end;
+    margin-right: 20%;
+  }
+  .main__info {
+    display: none;
+  }
+  .main__info-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .swiper {
+    display: block;
+    width: 221px;
+    height: 130px;
+    background-color: transparent;
+  }
+  .swiper-button-prev, .swiper-button-next {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hidden__title {
+    display: block;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    font-weight: 700;
+    font-size: 28px;
+    font-family: "Gilroy";
   }
   .menu__more {
     display: flex;
@@ -626,13 +671,20 @@ body {
     flex-direction: column;
   }
   .footer__first-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     margin: 2%;
+    width: 100vw;
   }
   .footer__phone {
     width: 100vw;
-    margin-left: 0;
     margin-top: 26px;
     font-size: 18px;
+  }
+  .footer__phone-call {
+    margin-left: 5vw;
   }
   .footer__phone-number {
     font-size: 24px;
@@ -646,7 +698,7 @@ body {
   .footer__second-container, .footer__form {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
   }
   .footer__second-container {
     margin-left: 5%;
@@ -656,7 +708,7 @@ body {
     display: none;
   }
   .footer__confirm {
-    margin-left: 10%;
+    margin-right: 5vw;
   }
   #imgHidden {
     display: none;
