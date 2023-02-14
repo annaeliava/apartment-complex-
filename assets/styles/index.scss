@@ -564,6 +564,10 @@ swiper-container {
     display: none;
 }
 
+.secondSwiper {
+    display: none;
+}
+
 .hidden__title {
     display: none;
 }
@@ -641,6 +645,22 @@ swiper-container {
             align-items: center;
             text-align: center;
         }
+    }
+
+    .secondSwiper {
+        display: block;
+        width: 262px;
+        height: 255px;
+        margin-bottom: 106px;
+
+        .swiper-slide {
+            display: flex;
+            align-items:normal;
+        }
+    }
+
+    .addition {
+        display: none;
     }
 
     .hidden__title {
