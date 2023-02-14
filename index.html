@@ -9,41 +9,71 @@
 </head>
 <body>
     <header class="header">
-        <a href="index.html">
-            <img class="header__logo" src="assets/img/header__logo.svg" alt="logo">
-        </a>
-        <nav class="header__menu">
-            <ul class="header__menu-list">
-                <li class="header__menu-item">
-                    <a class="header__menu-link" href="#">
-                        Жилые комплексы
-                    </a>
-                </li>
-                <li class="header__menu-item">
-                    <a class="header__menu-link" href="#">
-                        О компании
-                    </a>
-                </li>
-                <li class="header__menu-item">
-                    <a class="header__menu-link" href="#">
-                        Как купить
-                    </a>
-                </li>
-                <li class="header__menu-item">
-                    <a class="header__menu-link" href="#">
-                        Контакты
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <div class="header__contacts">
-            <div class="header__contacts-item">+7 (918) 377-48-10</div>
-            <div class="header__contacts-item">
-                <a class="header__contacts-link" href="#">Заказать звонок</a>
+        <div class="header__desktop">
+            <a href="index.html">
+                <img 
+                    class="header__logo" 
+                    src="assets/img/header__logo.svg"
+                    alt="logo">
+            </a>
+            <nav class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">
+                            Жилые комплексы
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">
+                            О компании
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">
+                            Как купить
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__contacts">
+                <div class="header__contacts-item">+7 (918) 377-48-10</div>
+                <div class="header__contacts-item">
+                    <a class="header__contacts-link" href="#">Заказать звонок</a>
+                </div>
+            </div>
+        </div>
+        <div class="header__mobile">
+            <a href="#">
+                <img 
+                    src="assets/img/header__logo-menu.svg"
+                    class="header__logo-mobile" 
+                    alt="logoMobile">
+            </a>
+            <div class="header__menu-btn">
+                <div class="header__mobile-title">
+                    Меню
+                </div>
+                <button class="header__mobile-menu">
+                    <img    
+                        src="assets/img/header__menu-mobile.svg"    
+                        alt="menu">
+                </button>
             </div>
         </div>
     </header>
     <main class="main">
+        <div class="menu__more">
+            <a class="menu__more-link" href="#">Главная</a>
+            <span>/</span>
+            <a class="menu__more-link" href="#">Жилые комплексы</a>
+            <span>/</span>
+            <a class="menu__more-link" href="#">Яблоновский</a>
+        </div>    
         <hr class="main__line">
         <nav class="main__menu">
             <ul class="main__menu-list">
@@ -98,14 +128,6 @@
                 <button class="about__btn">Узнать стоимость проекта</button>
             </div>
             <div class="main__info">
-                <div class="main__info-item">
-                    <div class="main__info-container">
-                        <div class="main__info-text">
-                            <div class="main__info-title">Квартиры </div>
-                            <div class="main__info-subtitle">от 63 801 ₽/м² </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="main__info-item">
                     <div class="main__info-container">
                         <div class="main__info-text">
@@ -342,7 +364,7 @@
                             src="assets/img/description-imgs/thirdImg.svg" 
                             alt="apartment 3">
                     </div>
-                    <div class="gallery__side-img">
+                    <div class="gallery__side-img" id="imgHidden">
                         <img 
                             src="assets/img/description-imgs/fourthImg.svg" 
                             alt="apartment 4">
